@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+<head>
+<title> Webpage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="container">
+	<div class="navbar">
+		<nav>
+			<ul id="menuList">
+				<li> <a href="">Menu</a></li>
+				<li> <a href="">Portfolio</a></li>
+				<li> <a href="">Contact</a></li>
+			</ul>
+		</nav>
+		<img src="menu.png " class="menu-icon" onclick="togglemenu()">
+	</div>
+	<div class="row">
+		<div class="col-1">
+			<h1> Welcome to my Website</h1>
+			<h4>Hi, I'm Nikhil Bhandari i created a Webpage<br>
+			using Html CSS and Javascript,<br></h4>
+		</div>
+		<div class="col-2">
+			<img src="we.png" class="image">
+		</div>
+	</div>
+	<div class="row1">
+		<a href="">Get in touch</a>
+	</div>
+	<div class="row2">
+		Recent Projects
+	</div>
+</div>
+<script>
+		var menuList = document.getElementById("menuList");
+		
+		menuList.style.maxHeight = "0px";
+		
+		function togglemenu(){
+		
+			if(menuList.style.maxHeight == "0px")
+				{
+					menuList.style.maxHeight = "100px";
+				}
+				else
+				{
+					menuList.style.maxHeight = "0px";
+				}
+		}
+		
+		
+	</script>
+</body>
+</html>

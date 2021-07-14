@@ -1,0 +1,164 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+text-decoration:none;	
+}
+.container{
+	height:170vh;
+	width:100vw;
+	background-color:white;
+	box-sizing: border-box;
+	overflow:hidden;
+
+}
+.navbar{
+	width:100%;
+	display:flex;
+	align-items:center;
+}
+.menu-icon{
+	width:25px;
+	cursor:pointer;
+	display:none;
+} 
+nav{
+	flex:1;
+	text-align:right;
+}
+nav ul li{
+	list-style:none;
+	display:inline-block;
+	margin-right:30px;
+}
+nav ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:14px;
+}
+nav ul li a:hover{
+	color: #ff5ea2;
+}
+.row{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin:100px 0;
+	
+}
+.col-1{
+	flex-basis:40%;
+	position:relative;
+	margin-left:110px;
+	
+}
+.col-1 h1{
+	font-size:50px;
+	text-decoration:bold;
+}
+.col-1 h4{
+	font-size:25px;
+	color:black;
+	
+}
+.col-2{
+	position:relative;
+	flex-basis:100%;
+	display: flex;
+	align-items:center;
+}
+.col-2 .image{
+	width:40%;
+}
+.row1{
+	height:70px;
+	width:200px;
+	position:relative;
+	margin-left:110px;
+	font-size:20px;
+	text-align:center;
+	line-height:70px;
+	background-color:grey;
+	color:white;
+	margin-bottom:30px;
+	cursor:pointer;
+}
+.row2{
+	height:90px;
+	width:100%;
+	font-size:30px;
+	text-align:center;
+	line-height:90px;
+	background-color:grey;
+	color:white;
+}
+  
+ @media only screen and (max-width:700px){
+ 
+ nav ul{
+		width: 100%;
+		background: red;
+		position: absolute;
+		top: 75px;
+		right: 0;
+		z-index: 4;
+		text-align:center;
+		text-decoration:none;
+}
+nav ul li{
+		display:block;
+		margin-top:10px;
+		margin-bottom:10px;
+}	
+nav ul li a{
+		color:#fff;
+}
+.menu-icon{
+	display:block; 
+	margin:10px;
+}
+#menuList{
+	overflow:hidden;
+	transition:0.5s;
+} 
+  
+  
+  
+.col-1{
+	flex-basis:100%;
+	margin-bottom:50px;
+	
+}
+.col-1 h1{
+	font-size:55px;
+	position:absolute;
+	top:-250px;
+	left:-50px;
+}
+.col-1 h4{
+	font-size:20px;
+	margin-top:200px;
+	position:absolute;
+	top:50px;
+	
+}
+.col-2{
+	flex-basis:100%;
+	margin-bottom: 80px;
+}
+.col-2 .image{
+	width:300px;
+	height:300px;
+	position:relative;
+	top:100px;
+	left:-90px;
+}
+.row1{
+	
+	flex-direction :column-reverse;
+	margin: 250px 70px;
+}
+.row2{
+	flex-direction :column-reverse;
+	margin: -190px 0;
+}
